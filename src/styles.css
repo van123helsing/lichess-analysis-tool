@@ -1,0 +1,261 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  background-color: #262421;
+  width: 100%;
+  height: 100%;
+  font-size: 1vmin;
+}
+
+#mainScreen{
+  width: 80vw;
+  height: 97vh;
+  margin: 0 auto;
+  display: flex;
+}
+
+#chessBoard{
+  width:60%;
+  display: flex;
+}
+
+#settings{
+  width:30%;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  margin-left: 2vw;
+  background: #4d4d4d;
+  color: white;
+}
+
+#settingsScreen{
+  display: none;
+}
+
+#loadBook{
+  display: none;
+}
+
+#movesScreen{
+  width: 100%;
+  height: 100%
+}
+
+#donateScreen{
+  display: none;
+  width: 100%;
+  height: 100%
+}
+
+#aboutScreen{
+  display: none;
+  width: 100%;
+  height: 100%
+}
+
+#myBoard{
+  width:100%;
+  margin:2.5vmin;
+}
+
+#movesHistory{
+  width: 100%;
+  height: 30%;
+  background: #59595d;
+  border-color: #1d2124;
+  border-radius: 10px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#movesBook{
+  width: 100%;
+  height: 60%;
+  margin-top: 1rem;
+  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.movesHistoryHover:hover{
+  cursor: pointer;
+}
+
+#info{
+  display: flex;
+  margin-bottom: 1.5vh;
+}
+
+.alerts{
+  display: none;
+  width: 100%;
+  margin-left: 1vw;
+  margin-bottom: 1vh;
+}
+
+.titles{
+  margin-left: 1vw;
+  margin-bottom: 2vh;
+  margin-top: 1vh;
+  color: #212529;
+  font-size: 3vmin;
+  text-align: center;
+}
+
+#outer {
+  width:100%;
+}
+
+.innerr {
+  display: inline-block;
+}
+
+.navBr{
+  background: #33312e;
+}
+
+.navBtn{
+  margin: 1vw;
+  color: black;
+  font-size: 2vh;
+  width: 100%;
+  height: 100%;
+}
+.navBtn:hover{
+  background: #4d4d4d;
+  text-decoration-line: none;
+  color:black;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+.selectedNavBtn{
+  background: #4d4d4d;
+  text-decoration-line: none;
+  color:black;
+  padding-bottom: 2px
+}
+
+
+#flipOrientationBtn:hover{
+  fill: #3b3939;
+  cursor: pointer;
+}
+
+.boxMovesBook{
+  font-size: 0.7rem;
+}
+
+.tableRow:hover{
+  cursor: pointer;
+  background: #212529!important;
+}
+
+#moveBack:hover{
+  fill: #3b3939;
+  cursor: pointer;
+}
+
+.mrg{
+  margin-left: 1vw;
+  margin-bottom: 1vh;
+}
+
+.mrgTop{
+  margin-top: 2vh;
+  display: block;
+}
+
+.settingsCol{
+  display: block;
+  padding-right: 0;
+  padding-left: 0;
+  width: 30%;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 30%;
+  margin-left: 1vw;
+}
+
+.opponentMove{
+  text-align: center;
+  display: none;
+  color: black;
+  margin-top: 15vh;
+}
+
+.noMoveFound{
+  text-align: center;
+  display: none;
+  color: black;
+  margin-top: 15vh;
+}
+
+.bar{
+  width:100%;
+}
+
+.white{
+  display: inline-block;
+  background: #ccc;
+}
+
+.draws{
+  display: inline-block;
+  background: #666;
+}
+
+.black{
+  display: inline-block;
+  background: #333;
+}
+
+#movesHistoryBtn{
+  margin-bottom: 1vm;
+}
+
+.donateBtn{
+  text-align: center;
+  display: block;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+#evalArrow{
+  position: fixed;
+  z-index: 3000;
+  opacity: 40%;
+  height: 100%;
+  width: 100%;
+  pointer-events:none;
+}
+
+.ratingContainer {
+  margin-top: 2.5vh;
+  position: relative;
+  background: rgb(235, 235, 235);
+  border: 2px solid #3c2d21;
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  border-right: 0;
+  overflow: hidden;
+  display: none;
+}
+
+.ratingSlider {
+  background: rgb(35, 35, 35);
+  transition: height 300ms;
+  -webkit-transition: height 600ms;
+}
+.ratingCanvas {
+  position: absolute;
+  left: 0;
+}
+
+.opponentMoves{
+  background: #6c757d;
+}
+.opponentMoves:hover{
+ cursor: not-allowed;
+}
