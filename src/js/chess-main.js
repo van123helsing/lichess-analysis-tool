@@ -187,6 +187,7 @@ function drawBestMoveArrow() {
   var centerXto = offset.left + width / 2;
   var centerYto = offset.top + height / 2;
   let canvas = document.getElementById("evalArrow");
+  canvas.style.opacity ="40%";
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
   var ctx = canvas.getContext("2d");
