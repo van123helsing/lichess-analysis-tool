@@ -183,7 +183,7 @@ function downloadPgn(){
     // event.total is only available if server sends `Content-Length` header
     var size = event.loaded;
     $("#downloadingPlaceHolder").show();
-    $("#downloadingPlaceHolder").text("Downloaded: " + (size/1000000).toFixed(2) + "MB     (1000 games is aprox. 0.7MB)");
+    $("#downloadingPlaceHolder").text("Downloaded: " + (size/1000000).toFixed(2) + "MB     (1000 games is aprox. 1MB)");
     // console.log(`Downloaded ${event.loaded} of ${event.total} bytes`);
   }
   req.send();
