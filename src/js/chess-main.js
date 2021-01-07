@@ -106,10 +106,12 @@ stockfish.onmessage = function (event) {
   if (event.startsWith("bestmove")) {
     evalInProgress = false;
     bestmove = event.split(" ")[1];
-    $(".ratingContainer").show();
-    make_rating_slider();
-    if (board !== null)
+
+    if (board !== null){
+      $(".ratingContainer").show();
+      make_rating_slider();
       drawBestMoveArrow();
+    }
   }
   if (event.startsWith("info")) {
     // evaluation = ((event.split(" ")[9]) / 100).toFixed(1);
@@ -191,6 +193,7 @@ function drawBestMoveArrow() {
   ctx.lineWidth = 20;
   ctx.strokeStyle = 'steelblue';
   ctx.fillStyle = 'steelbllue';
+  console.log(ctx, centerXfrom, centerYfrom, centerXto, centerYto);
 
   create_arrow(ctx, centerXfrom, centerYfrom, centerXto, centerYto, {
     fillStyle: 'steelblue',
